@@ -72,7 +72,7 @@ public class CrawlerExample {
     private static final String STUID_URL = "http://jxglstu.hfut.edu.cn/eams5-student/for-std/grade/sheet";
 
 
-    private static Map<String, List<Cookie>> cookieMap = Maps.newHashMapWithExpectedSize(4);
+    private Map<String, List<Cookie>> cookieMap = Maps.newHashMapWithExpectedSize(4);
 
 
     private CookieManager cookieManager = new CookieManager();
@@ -401,7 +401,7 @@ public class CrawlerExample {
     }
 
 
-    private static class CookieManager implements CookieJar {
+    private class CookieManager implements CookieJar {
         @Override
         public void saveFromResponse(HttpUrl httpUrl, List<Cookie> list) {
             String host = httpUrl.host();
