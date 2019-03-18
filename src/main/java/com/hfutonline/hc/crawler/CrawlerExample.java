@@ -228,6 +228,8 @@ public class CrawlerExample {
 //
 //        FileUtils.write(new File(basicStuInfoHtmlPath),basicStuInfoHtml,StandardCharsets.UTF_8);
 
+        //10.课表信息
+
         return true;
     }
 
